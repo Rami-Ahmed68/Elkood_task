@@ -22,7 +22,7 @@ const routes = [
     name: "home",
     component: HomeView,
     meta: {
-      title: "Home",
+      title: "Home 🏠",
       keywords: ["elkood", "task", "home"],
     },
   },
@@ -31,7 +31,7 @@ const routes = [
     name: "profile",
     component: ProfileView,
     meta: {
-      title: "Profile",
+      title: "Profile 🙎🏻‍♂️",
       keywords: ["elkood", "task", "profile"],
     },
   },
@@ -40,7 +40,7 @@ const routes = [
     name: "user",
     component: UserView,
     meta: {
-      title: "User",
+      title: "User 🙎🏻‍♂️",
       keywords: ["elkood", "task", "user"],
     },
   },
@@ -49,7 +49,7 @@ const routes = [
     name: "appointment",
     component: AppointmentView,
     meta: {
-      title: "Book Appointment",
+      title: "Book Appointment 📆🩺",
       keywords: ["elkood", "task", "appointment"],
     },
   },
@@ -58,7 +58,7 @@ const routes = [
     name: "install",
     component: InstallView,
     meta: {
-      title: "Install App",
+      title: "Install App 📥",
       keywords: ["elkood", "task", "install app"],
     },
   },
@@ -67,7 +67,7 @@ const routes = [
     name: "register",
     component: RegisterView,
     meta: {
-      title: "Register",
+      title: "Register 🔐",
       keywords: ["elkood", "task", "register"],
     },
   },
@@ -76,7 +76,7 @@ const routes = [
     name: "login",
     component: LoginView,
     meta: {
-      title: "Log in",
+      title: "Log in 🔓",
       keywords: ["elkood", "task", "log in"],
     },
   },
@@ -85,7 +85,7 @@ const routes = [
     name: "dashboard",
     component: DashBoardView,
     meta: {
-      title: "Dashboard",
+      title: "Dashboard 🎛️",
       keywords: ["elkood", "task", "dashboard"],
     },
     children: [
@@ -94,7 +94,7 @@ const routes = [
         name: "dash-board-users",
         component: UsersView,
         meta: {
-          title: "Dashboard Users",
+          title: "Dashboard Users 👥",
           keywords: ["elkood", "task", "dash-board-users", "users", "dash"],
         },
       },
@@ -103,7 +103,7 @@ const routes = [
         name: "dash-board-patients-waiting",
         component: WaitingView,
         meta: {
-          title: "Dashboard Patients waiting",
+          title: "Dashboard Patients ⏳",
           keywords: ["elkood", "task", "dash-board-patients-waiting", "dash"],
         },
       },
@@ -112,7 +112,7 @@ const routes = [
         name: "dash-board-current-patient",
         component: CurrentPatientView,
         meta: {
-          title: "Dashboard Ccurrent patient",
+          title: "Dashboard Ccurrent patient 🤒",
           keywords: ["elkood", "task", "current-patient", "dash"],
         },
       },
@@ -121,7 +121,7 @@ const routes = [
         name: "dash-board-appointments",
         component: AppointmentsView,
         meta: {
-          title: "Dashboard Appointments",
+          title: "Dashboard Appointments 📆🩺",
           keywords: ["elkood", "task", "dash-board-appointments", "dash"],
         },
       },
@@ -145,9 +145,6 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   document.title = `${to.meta.title}`;
-
-  // تعديل الكلمات المفتاحية
-  // const keywords = to.meta.keywords;
 
   document
     .querySelector('meta[name="keywords"]')
